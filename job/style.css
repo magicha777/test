@@ -1,0 +1,227 @@
+        body{
+            font-family:FangSong;
+            font-size: 150%;
+        }
+        .background{
+            background-repeat:no-repeat ;
+            background-size:100% 100%;
+            background-attachment: fixed;
+        }
+
+ /* 设置整体大框架 */
+ .overall{
+  /* 设置窗口大小 */
+  width: 90px;
+  height: 90px;
+  /* 将弹性 <div> 元素的所有项目的居中对齐 */
+  align-items: center;
+
+  /* 设置图片外边距 左右居中 上方5% */
+  margin: 5% auto;        
+}
+
+.content{
+  /* 设置相对定位 */
+  position: relative;
+  height: 40px;
+}
+
+.content ul{
+  /* 去除标签<ul><li></li></ul>默认加的样式 */
+  list-style-type: none;
+}
+
+.content ul>li{
+  width: 90px;
+  height: 90px;
+
+  /* 设置绝对定位 */
+  position: absolute;
+
+  /* 设置过度效果 时间为1s */
+  transition: 1s;
+
+  /* 设置最大透明度 默认一开始图片为透明的 当下面js加载的时候
+      第一张图片设置为不透明
+  */
+  opacity: 0;
+}
+
+/* 设置每个图片的样式 */
+.content ul>li img{    
+  /* 设置每一张图片的大小 */
+  width: 90px;
+  height: 90px;
+
+  /* 设置圆角边框 */
+  border-radius: 10%;
+
+         
+}
+
+/* 设置轮播图下面的小点 */
+.content ol{
+  /* 设置相对定位 */
+  position: relative;
+
+  /* 设置网格布局 */
+  display: grid;
+  
+  /* 设置网格布局中的列数及宽度 */
+  grid-template-columns: repeat(3, 5px);
+
+  /* 设置网格布局中的行数及宽度 */
+  grid-template-rows: auto;
+
+  /* 设置网格行与列之间的间隙 */
+  /* 间隙为1em */
+  grid-gap: 1em;
+  gap:1em;
+
+  /* 右浮动 */
+  float: right;
+
+  /* 设置浮点的向上的内边距 */
+  margin-top: 100px;
+
+  /* 去除列表样式 */
+  list-style: none;
+
+  /* 把图像的上边缘设置在其包含元素上边缘之下0px高的位置 */
+  top: 0;
+
+  /* 把图像的左边缘设置在其包含元素上边缘之下0px高的位置 */
+  left: 0;
+}
+
+.content ol li{
+  /* 设置每个小点的大小 */
+  width: 5px;
+  height: 3px;
+
+  
+
+  /* line-height 属性设置行间的距离（行高） */
+  line-height: 5px;
+
+  /* 浮动左对齐 */
+  float: left;
+
+  /* 把表格做成圆点 */
+  border-radius: 2em;
+
+  /* 设置圆点的边框 */
+  border: 2px solid #af9d9d;
+}
+  
+  
+     
+  
+      
+
+
+
+
+        h1 ,h2{
+            color:rgb(131, 185, 229);
+            text-align: center;
+            transition: 0.5s;
+            margin: 20px ;
+        }
+        h1{
+          margin: 40px;
+         
+
+        }
+        h1:hover,h2:hover{
+            color:#CC95C0
+        }         
+
+        .current,.future,.lifequality,.day1,.day2
+        ,.day3,.day4,.day0{
+        background-color: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: rgba(109, 106, 106, 0.19) 0px 6px 15px 0px;
+        -webkit-box-shadow: rgba(142, 142, 142, 0.19) 0px 6px 15px 0px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        color: rgba(255, 255, 255, 0.75);
+        display: block;
+        text-align: center;
+        margin: 5%;
+      }
+
+/* 搜索框 */
+        .searching
+        {
+        width: 50%;
+        text-align: center;
+        margin:  20px auto 20px auto;
+        padding: 20px;
+        }
+
+        .box1{
+        display: flex;
+        margin:  20px auto 20px auto;
+        text-align: center;
+        }
+    /* 当前天气 */   
+        .current{
+        float: left;
+        margin:  10px auto 10px auto;
+        }
+        /* 生活质量 */
+        .lifequality{
+            float:right;
+            margin:  10px auto 10px auto;
+
+        }
+        
+        /* 按钮 */ 
+         button {
+            
+            background-image: linear-gradient(to right, #CC95C0 0%, #DBD4B4  51%, #CC95C0  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 300px;
+            display: inline;
+            border-color: #CC95C0;
+            
+          }
+
+          button:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+          input{
+            background-color: rgba(255, 255, 255, 0.25);
+            display: inline;
+            padding: 15px 45px;
+            border-radius: 300px;
+            text-align: center;
+            -webkit-text-size-adjust: auto;
+          }
+/* 未来天气 */
+          .day1,.day2,.day3,.day4,.day0{
+            display:block;
+            margin: 3% 25% 3% 25%;
+         
+         
+
+          }
+
+          /* 图片 */
+img{
+  opacity: 0.5;
+  color: lightskyblue;
+  height: 60px;
+}

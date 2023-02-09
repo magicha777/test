@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html id="myhtml" lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>神奇の天气</title>
+    <cookie></cookie>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 兼容性问题 -->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>   
+    <!-- jquery -->
+    
+
+    
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="overall">
+        <!-- 内容  -->
+        <div class="content">
+            <!-- 轮播图片 -->
+            <ul>
+                <li><img src="images/paidaxin/1.jpg" alt=""></li>
+                <li><img src="images/paidaxin/2.jpg" alt=""></li>
+                <li><img src="images/paidaxin/3.jpg" alt=""></li>
+            </ul>
+            <!-- 轮播图的点 -->
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>        
+    </div>
+
+    <body background="images/background.jpg"></body>
+    <h1>welcome to 神奇の天气世界</h1>
+    <!-- 搜索框+城市显示 -->
+    <div class="searching">
+        <input type="text">
+        <button>searching</button>
+        <h2 class="scity">当前城市</h2>
+    </div >
+
+    <div class="box1">
+         <!-- 当前天气 -->
+
+    <div class="current" >
+        <h2>当前天气</h2>
+        <p class="weather">天气 </p>
+        <img class="pic" scr="" >
+        <p class="temperature">温度  </p>
+        
+            <p class="humidity">湿度 </p>
+            <p class="direct">风向 </p>
+            <p class="power">风力 </p>
+            <p class="aqi">空气质量指数 </p>
+      
+       
+            </div>
+             <!-- 生活指数 -->
+             <div class="lifequality">
+                <h2>生活指数</h2>
+                <h3>舒适度</h3>
+                <p class="shushidu"></p>
+                <h3>穿衣</h3>
+                <p class="chuanyi"></p>
+                <h3>紫外线</h3>
+                <p class="ziwaixian"></p>
+                <h3>运动</h3>
+                <p class="yundong"></p>
+                
+                    </div>
+
+
+
+    </div>
+
+   
+
+    <!-- 未来天气预测 -->
+    <div class="future">
+<h2>未来5天天气</h2>
+<div class="day0"></div>
+<div class="day1"></div>
+<div class="day2"></div>
+<div class="day3"></div>
+<div class="day4"></div>
+    </div>
+ 
+    <script src="js.js" ></script> 
+ 
+    
+</body>
+</html>
